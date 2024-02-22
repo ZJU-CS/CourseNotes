@@ -3,7 +3,7 @@ repo_name: ZJU-CS/CourseNotes
 repo_url: https://github.com/ZJU-CS/CourseNotes
 edit_uri: blob/main/docs
 
-copyright: 'Copyright &copy 2024 ZJU-CS'
+copyright: Copyright &copy 2024 <a href="https://github.com/zju-cs">Project ZJU-CS</a>
 
 theme:
   name: material
