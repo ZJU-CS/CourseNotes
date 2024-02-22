@@ -2,7 +2,7 @@ name: Build MkDocs Site and Deploy
 
 on:
   push:
-    branches: ['master']
+    branches: ['main']
   workflow_dispatch:
   repository_dispatch:
     type: ['build']
