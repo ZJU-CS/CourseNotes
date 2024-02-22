@@ -88,41 +88,41 @@ nav:
   - index.md
   - "数字逻辑设计":
     - "Main":
-      - digital_design/index.md
-      - digital_design/1-x.md
-      - digital_design/2-x.md
-      - digital_design/3-x.md
-      - digital_design/4-x.md
-      - digital_design/5-x.md
-      - digital_design/6-x.md
-      - digital_design/7-x.md
+      - digital-design/index.md
+      - digital-design/1-x.md
+      - digital-design/2-x.md
+      - digital-design/3-x.md
+      - digital-design/4-x.md
+      - digital-design/5-x.md
+      - digital-design/6-x.md
+      - digital-design/7-x.md
     # - "Appendix":
   - "计算机组成":
     - "Main":
-      - computer_organization/index.md
-      - computer_organization/1-x.md
-      - computer_organization/2-x.md
-      - computer_organization/3-x.md
-      - computer_organization/4-x.md
-      - computer_organization/5-x.md
-      - computer_organization/6-x.md
+      - computer-organization/index.md
+      - computer-organization/1-x.md
+      - computer-organization/2-x.md
+      - computer-organization/3-x.md
+      - computer-organization/4-x.md
+      - computer-organization/5-x.md
+      - computer-organization/6-x.md
     - "Appendix":
-      - computer_organization/A-exams.md
+      - computer-organization/A-exams.md
   - "操作系统":
     - "Main":
-      - operating_system/index.md
-      - operating_system/0-x.md
-      - operating_system/1-x.md
+      - operating-system/index.md
+      - operating-system/0-x.md
+      - operating-system/1-x.md
       - "2.x 同步 | Synchronization":
-        - operating_system/2-1-x.md
-        - operating_system/2-2-x.md
-        - operating_system/2-3-x.md
+        - operating-system/2-1-x.md
+        - operating-system/2-2-x.md
+        - operating-system/2-3-x.md
       - "3.x 内存 | Memory":
-        - operating_system/3-1-x.md
-        - operating_system/3-2-x.md
-      - operating_system/4-x.md
-      - operating_system/5-x.md
-      - operating_system/6-x.md
+        - operating-system/3-1-x.md
+        - operating-system/3-2-x.md
+      - operating-system/4-x.md
+      - operating-system/5-x.md
+      - operating-system/6-x.md
     # - "Appendix":
 
 
