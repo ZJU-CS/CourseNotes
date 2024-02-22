@@ -1,0 +1,51 @@
+name: Build MkDocs Site and Deploy
+
+on:
+  push:
+    branches: ['master']
+  workflow_dispatch:
+  repository_dispatch:
+    type: ['build']
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: 'build'
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Build with MkDocs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build with MkDocs
+        run: mkdocs build
+
+      - name: Deploy pages
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
+        with:
+          source-directory: ./site
+          destination-github-username: ZJU-CS
+          destination-repository-name: zju-cs.github.io
+          target-branch: main
